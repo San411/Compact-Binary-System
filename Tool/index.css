@@ -1,0 +1,84 @@
+body{
+    background-color:#F3EDE9 !important;
+    margin: 2%;
+}
+
+#discription{
+font-family: 'Montserrat', sans-serif;
+color: #000 ;
+font-size: larger;
+text-align: center;
+margin: 2%;
+}
+
+.system{
+    margin-top: 5%;
+text-align: center;
+}
+
+#box{
+
+width: 30%;
+margin: 2% auto;
+background-color:  #b79483;
+font-family: 'Montserrat', sans-serif;
+color: #F3EDE9 ;
+text-align: center;
+line-height: 40px;
+border-radius: 25px;
+  }
+
+label{
+    font-family: 'Montserrat', sans-serif;
+color: #654321;
+display: inline;
+padding-right:1%;
+}
+
+
+ input{
+     display: inline !important;
+     width:70px !important;
+     margin:2% 0% !important;
+ }
+
+  .leftEntry{
+   display: inline;
+   /* margin: 0% 10% 0% 28%; */
+   margin-left: 30%;
+  }
+
+  .rightEntry{
+display: inline;
+/* margin: 0% 2% ; */
+margin-left: 10%;
+  }
+
+.form-group {
+    margin-bottom: -1rem !important;
+}
+
+hr{
+      margin: 0% 20%;
+  }
+  
+#evaluate{ 
+    margin:0 auto;
+    display:block;
+
+}
+
+  #result{
+        width: 15%;
+        height:200%;
+margin: 2% auto;
+padding: 0.5%;
+background-color: rgba(183,148,131,0.1);
+border-radius: 25px;
+text-align: center;
+line-height: 300%;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  }
+
+
+
