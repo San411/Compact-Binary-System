@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap" rel="stylesheet">
+    <title>Compact Binary System</title>
+</head>
+
+<body>
+
+<h4 id="discription">This is a tool to calculate the final mass and spin of the remnant Blackhole</h4>
+    
+<div class="system">
+<label>Select the Compact Binary System :</label>
+<div class="btn-group">
+    <button class="btn btn-info btn-lg" type="button" id="binarySystem">
+        BH-BH
+    </button>
+    <button type="button" class="btn btn-lg btn-info dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false"   >
+    </button>
+        <div class="dropdown-menu" >
+            <a class="dropdown-item" onclick=equation1() >BH-BH</a>
+            <a class="dropdown-item" onclick=equation2() >BH-NS</a>
+            <a class="dropdown-item" onclick=equation3() >NS-NS</a>
+        </div>
+</div>
+</div>
+
+<div id = "box">af = Aaη + Baχ − Ca (1 − mf)<br> 
+                mf(BH − BH) = Am + Bmη^2 + Cmχ
+</div>
+
+    <div class="form-group ">    
+        <div class="leftEntry">
+            <label for="exampleFormControlInput1">Primary Mass(m1) :</label>
+            <input  class="form-control"  placeholder="0.0">
+        </div>
+        <div class="rightEntry" >
+            <label for="exampleFormControlInput1">Secondary Mass(m2) :</label>
+            <input  class="form-control" placeholder="0.0">
+        </div>
+</div>
+    <div class="form-group">
+            <div class="leftEntry">
+                <label for="exampleFormControlInput1">Primary Spin(a1) :</label>
+                <input class="form-control" placeholder="0.0">
+            </div>
+            <div class="rightEntry" >
+                <label for="exampleFormControlInput1">Secondary Spin(a2) :</label>
+                <input class="form-control" placeholder="0.0">
+            </div>
+</div>
+
+<button class="btn btn-info" id="evaluate" onclick=displayResult()>Evaluate</button>
+<hr>
+<div id="result">FINAL MASS(mf) = 0.0<br>
+FINAL SPIN(af) = 0.0
+</div>
+
+    <script src="index.js"></script>
+</body>
+</html>
